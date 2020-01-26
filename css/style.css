@@ -1,0 +1,1 @@
+*{box-sizing:border-box}figcaption{display:none}.gallery-item{width:33.3%;display:flex;flex-direction:column;padding:1em 1em;border:none;border-radius:0.25em;float:left}.gallery-item a{width:100%}.gallery-item a figure img{width:100%}input{width:33.3%;font-size:16px;padding:12px 20px 12px 40px;border:1px solid #ddd;margin:auto;display:flex;text-align:center}
