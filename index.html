@@ -9,14 +9,14 @@
   <!--CSS-->
   <link rel ="stylesheet" href="Mag Popup master/magnific-popup.css">
   <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="css/normalize.min.css">
+
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
  
-<input type="text" id="searchBar" onkeyup="searchFunction()" name= 'search' placeholder="Search for images..">
+<input id="search" type="text" keyup= 'search()' name="searchBar" placeholder="Search">
 
-<div class="parent-container">
+<main class="parent-container">
     <div class="gallery-item">
         <a href="photos/01.jpg">
             <figure>
@@ -28,11 +28,11 @@
     </div>
     <div class="gallery-item">
         <a href="photos/02.jpg">
-        <figure>
-            <img src="photos/02.jpg" alt="lake">
-            <figcaption>The lake was so calm today. We had a great view of the snow on the mountains from here.
-            </figcaption>
-        </figure>
+            <figure>
+                <img src="photos/02.jpg" alt="lake">
+                <figcaption>The lake was so calm today. We had a great view of the snow on the mountains from here.
+                </figcaption>
+            </figure>
         </a>
     </div>
     <div class="gallery-item">
@@ -46,56 +46,56 @@
     </div>
     <div class="gallery-item" >
         <a href="photos/04.jpg">
-        <figure>
-            <img src="photos/04.jpg" alt="iceberg">
-            <figcaption>It was amazing to see an iceberg up close, it was so cold but didn’t snow today.
-            </figcaption>
-        </figure>
+            <figure>
+                <img src="photos/04.jpg" alt="iceberg">
+                <figcaption>It was amazing to see an iceberg up close, it was so cold but didn’t snow today.
+                </figcaption>
+            </figure>
         </a>
     </div>
     <div class="gallery-item" >
         <a href="photos/05.jpg">
-        <figure>
-            <img src="photos/05.jpg" alt="desert">
-            <figcaption>The red cliffs were beautiful. It was really hot in the desert but we did a lot of walking through the canyons.
-            </figcaption>
-        </figure>
+            <figure>
+                <img src="photos/05.jpg" alt="desert">
+                <figcaption>The red cliffs were beautiful. It was really hot in the desert but we did a lot of walking through the canyons.
+                </figcaption>
+            </figure>
         </a>
     </div>
     <div class="gallery-item" >
         <a href="photos/06.jpg">
-        <figure>
-            <img src="photos/06.jpg" alt="fall">
-            <figcaption>Fall is coming, I love when the leaves on the trees start to change color.
-            </figcaption>
-        </figure>
+            <figure>
+                <img src="photos/06.jpg" alt="fall">
+                <figcaption>Fall is coming, I love when the leaves on the trees start to change color.
+                </figcaption>
+            </figure>
         </a>
     </div>
     <div class="gallery-item" >
         <a href="photos/07.jpg">
-        <figure>
-            <img src="photos/07.jpg" alt="plantation">
-            <figcaption>I drove past this plantation yesterday, everything is so green!
-            </figcaption>
-        </figure>
+            <figure>
+                <img src="photos/07.jpg" alt="plantation">
+                <figcaption>I drove past this plantation yesterday, everything is so green!
+                </figcaption>
+            </figure>
         </a>
     </div>
     <div class="gallery-item" >
         <a href="photos/08.jpg">
-        <figure>
-            <img src="photos/08.jpg" alt="dunes">
-            <figcaption>My summer vacation to the Oregon Coast. I love the sandy dunes!
-            </figcaption>
-        </figure>
+            <figure>
+                <img src="photos/08.jpg" alt="dunes">
+                <figcaption>My summer vacation to the Oregon Coast. I love the sandy dunes!
+                </figcaption>
+            </figure>
         </a>
     </div>
     <div class="gallery-item" >
         <a href="photos/09.jpg">
-        <figure>
-            <img src="photos/09.jpg" alt="countryside lane">
-            <figcaption>We enjoyed a quiet stroll down this countryside lane.
-            </figcaption>
-        </figure>
+            <figure>
+                <img src="photos/09.jpg" alt="countryside lane">
+                <figcaption>We enjoyed a quiet stroll down this countryside lane.
+                </figcaption>
+            </figure>
         </a>
     </div>
     <div class="gallery-item" >
@@ -109,23 +109,23 @@
     </div>
     <div class="gallery-item" >
         <a href="photos/11.jpg">
-        <figure>
-            <img src="photos/11.jpg" alt="cave">
-            <figcaption>I walked through this meadow of bluebells and got a good view of the snow on the mountain before the fog came in.
-            </figcaption>
-        </figure>
+            <figure>
+                <img src="photos/11.jpg" alt="cave">
+                <figcaption>I walked through this meadow of bluebells and got a good view of the snow on the mountain before the fog came in.
+                </figcaption>
+            </figure>
         </a>
     </div>
     <div class="gallery-item" >
         <a href="photos/12.jpg">
-        <figure>
-            <img src="photos/12.jpg" alt="bluebells">
-            <figcaption>I love hay bales. Took this snap on a drive through the countryside past some straw fields.
-            </figcaption>
-        </figure>
+            <figure>
+                <img src="photos/12.jpg" alt="bluebells">
+                <figcaption>I love hay bales. Took this snap on a drive through the countryside past some straw fields.
+                </figcaption>
+            </figure>
         </a>
     </div>
-</div>
+</main>
 
 
 
@@ -136,7 +136,6 @@
 
     <script src="js/jquery-1.11.2.min.js"></script>
     <script src="Mag Popup master/jquery.magnific-popup.min.js"></script>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
