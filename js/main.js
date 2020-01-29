@@ -1,20 +1,4 @@
 
-function search() {
-  const $searchInput = $(this)
-    .val()
-    .toLowerCase();
-    console.log(this);
-  $("figure").each(function() {
-    const $capt = $(this).attr("figcaption");
-    if ($capt.indexOf($searchInput) > -1) {
-      $(this).show();
-    } else {
-      $(this).hide();
-    }
-  });
-}
-search();
-
 
 $('.parent-container').magnificPopup({
   delegate: 'a',
@@ -32,3 +16,24 @@ $('.parent-container').magnificPopup({
   tCounter: '<span class="mfp-counter">%curr% of %total%</span>' // markup of counter
   
 });
+
+function myFunction(){
+  var input, filter,galI,a,img,fig;
+  input = document.getElementById('search');
+  filter = input.value.toUpperCase()[0];
+  galI = document.getElementsByClassName("gallery-item") 
+  img = document.getElementsByClassName("gal-img");
+  fig = document.getElementsByTagName("figcaption");
+  for(i=0; i<galI.length; i++ ){
+    a=img[i].getAttribute('alt');
+    b=fig[i].textContent;
+    textValue=a||b;
+    if(textValue.indexOf(filter)>-1){
+      img[i].style.display="";
+      fig[i].style.display="block";
+    }else{
+      img[i].style.display="none";
+      fig[i].style.display="none";
+    }
+  }
+}
