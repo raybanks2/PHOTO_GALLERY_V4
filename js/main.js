@@ -20,20 +20,17 @@ $('.parent-container').magnificPopup({
 function myFunction(){
   var input, filter,galI,a,img,fig;
   input = document.getElementById('search');
-  filter = input.value.toUpperCase()[0];
+  filter = input.value.toUpperCase();
   galI = document.getElementsByClassName("gallery-item") 
   img = document.getElementsByClassName("gal-img");
   fig = document.getElementsByTagName("figcaption");
   for(i=0; i<galI.length; i++ ){
-    a=img[i].getAttribute('alt');
-    b=fig[i].textContent;
-    textValue=a||b;
+    textValue=fig[i].textContent.toUpperCase();
     if(textValue.indexOf(filter)>-1){
-      img[i].style.display="";
-      fig[i].style.display="block";
+      galI[i].style.display="block";
+      fig[i].style.display ="block";
     }else{
-      img[i].style.display="none";
-      fig[i].style.display="none";
+      galI[i].style.display="none";
     }
   }
 }
