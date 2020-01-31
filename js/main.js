@@ -5,7 +5,23 @@ $('.parent-container').magnificPopup({
   type: 'image',
   gallery:{enabled: true},
   preload: [0,2],
-  navigateByImgClick: true,
+  navigateByImgClick: true,	
+  title: true,	
+  image: {
+    markup: '<div class="mfp-figure">'+
+            '<div class="mfp-close"></div>'+
+            '<div class="mfp-img"></div>'+
+            '<div class="mfp-bottom-bar">'+
+              '<div class="mfp-title"></div>'+
+              '<div class="mfp-counter"></div>'+
+            '</div>'+
+          '</div>',
+    titleSrc: function(item) {
+    return item.el.parents('div').find('figcaption').html();
+    },
+    verticalFit: true,
+  }
+  
 });
 
 //search function

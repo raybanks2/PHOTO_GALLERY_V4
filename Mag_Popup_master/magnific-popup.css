@@ -291,6 +291,11 @@ img.mfp-img {
   word-wrap: break-word;
   padding-right: 36px; }
 
+figcaption{
+  display:block;
+  z-index: 1000;
+}
+
 .mfp-image-holder .mfp-content {
   max-width: 100%; }
 
